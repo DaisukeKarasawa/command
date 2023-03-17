@@ -1,4 +1,4 @@
-## [学習中によく使うコマンド](https://github.com/DaisukeKarasawa/practice_ruby/blob/master/well_use_command.rb)
+## [学習中によく使うコマンド](https://github.com/DaisukeKarasawa/command/blob/master/ruby_command/command.rb)
 
 ### 特定の文字の削除 String#delete
 
