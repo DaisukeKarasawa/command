@@ -1,4 +1,4 @@
-## [学習中によく使うコマンド]()
+## [学習中によく使うコマンド](https://github.com/DaisukeKarasawa/command/blob/master/go_command/command.go)
 
 ### 二つの数値の最大値・最小値の取得 math.Max/Min
 
@@ -102,7 +102,7 @@ fmt.Printf("%v\n", arr2)  // map[1:Go 2:Ruby]
 
 ### 指定時間のスリープ time.Sleep
 
-実行しているゴルーチンをしてした時間の間一時停止する。負またはゼロを指定すると、すぐに戻る。
+実行しているゴルーチンを指定した時間の間一時停止する。負またはゼロを指定すると、すぐに戻る。
 ```
 time.Sleep(100 * Milliseconds)  // 100ミリ秒の間停止
 
