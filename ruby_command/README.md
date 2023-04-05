@@ -2,7 +2,7 @@
 
 ### Stringクラス
 
-#### 特定の文字の削除 String#delete
+#### 特定の文字の削除 #delete
 
 引数に指定した文字と一致する全てを削除し、新しい文字列を返す。
 ```
@@ -11,7 +11,7 @@ str = 'RubyonRails'
 str.delete('on') # RubyRails
 ```
 
-#### 大文字・小文字へ置き換える String#upcase/#downcase
+#### 大文字・小文字へ置き換える #upcase/#downcase
 
 全ての文字を対応する大文字・小文字に置き換えた文字列を返す。
 ```
@@ -22,7 +22,7 @@ lowerCaseLetter.upcase  # MY NAME IS DAISUKE.
 capitalLetter.downcase  # i study ruby.
 ```
 
-#### 特定文字の文字数カウント String#scan/Array#length
+#### 特定文字の文字数カウント #scan/Array#length
 
 特定の文字列に対して引数にマッチした部分文字列の配列を返す。（String#scan）
 
@@ -34,7 +34,7 @@ capitalLetter.downcase  # i study ruby.
 'RubyonRails'.scan('R').length  # 2
 ```
 
-#### 特定文字列が何文字目に含まれているか String#index
+#### 特定文字列が何文字目に含まれているか #index
 
 文字列を右に向かって検索し、最初に見つかった部分文字列の左側のインデックスを返す。
 
@@ -49,7 +49,7 @@ n が負の場合、末尾から数えた位置から検索する。
 'abcdefabc'.index('abc', -4)  # 6
 ```
 
-#### 文字列から文字抽出 String#slice
+#### 文字列から文字抽出 #slice
 
 ※ slice! を使用する場合は、破壊的メソッドになるので、元の文字列にも影響がある。
 
@@ -82,7 +82,7 @@ string.slice(0..2)  # Hel
 
 ### Arrayクラス
 
-#### 配列の先頭の要素を取り除く Array#shift
+#### 配列の先頭の要素を取り除く #shift
 
 引数を指定した場合はその個数だけ取り除き、それを配列で返す。
 ```
@@ -91,7 +91,7 @@ webLanguages = ['Ruby', 'Go', 'Java', 'Python']
 webLanguages.shift # ['Go', 'Java', 'Python']
 ```
 
-#### 配列内の最大値・最小値の取得 Array#max/#min
+#### 配列内の最大値・最小値の取得 #max/#min
 
 最大の要素、最小の要素を返す。
 
@@ -103,14 +103,14 @@ maxMinArr.max     # 324
 maxMinArr.max(2)  # [324, 87]
 ```
 
-#### 範囲オブジェクトを配列にする Array#to_a
+#### 範囲オブジェクトを配列にする #to_a
 
 範囲オブジェクトから配列を作成して返す。
 ```
 (1..5).to_a # [1, 2, 3, 4, 5]
 ```
 
-#### 配列内の要素をランダムに返す Array#sample
+#### 配列内の要素をランダムに返す #sample
 
 配列の要素を1個ランダムで返す。
 
@@ -122,7 +122,7 @@ randArr.sample    # 2
 randArr.sample(3) # [6, 10, 1]
 ```
 
-#### 配列内をソートする
+#### 配列内をソートする #sort
 
 配列の内容を昇順でソートした配列を返す。（sort! は破壊的メソッドになる）
 
@@ -141,7 +141,7 @@ arr2.sort {|a, b| a.to_i <=> b.to_i}    # 0 3 12 21 323
 
 ### Hashクラス
 
-#### ハッシュからキー、値を取り出す Hash#keys/values
+#### ハッシュからキー、値を取り出す #keys/values
 
 ハッシュの全てのキー、または値を配列で返す。
 ```
