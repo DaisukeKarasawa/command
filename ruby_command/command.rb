@@ -54,3 +54,16 @@ string.slice(-4, 4)   # Ruby
 string.slice('H')     # H
 # 範囲演算子での指定
 string.slice(0..2)    # Hel
+
+# ハッシュからキー, 値を取り出す keys/values
+hash = {"ruby": 1, "go": 2, "javascript": 3}
+hash.keys    # ruby go javascript
+hash.values  # 1 2 3
+
+配列内の内容をソートする
+arr = [3, 323, 12, 21, 0]
+arr.sort                                # 0 3 12 21 323
+
+arr2 = ['3', '323', '12', '21', '0']
+arr2.sort                               # 0 12 21 3 323
+arr2.sort {|a, b| a.to_i <=> b.to_i}    # 0 3 12 21 323
